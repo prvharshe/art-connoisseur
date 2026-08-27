@@ -1,0 +1,61 @@
+/* Hallmark · genre: editorial · macrostructure: Photographic · theme: Newsprint
+ * tone: austere · anchor hue: 78 · enrichment: none (the work is the image)
+ * nav: N9 · footer: Ft4 · hero: H6 · feature: F3 · cta: C3
+ * audience: enthusiast first, specialist as critic · use: look
+ * fonts: Newsreader + Cardo + IBM Plex Mono (outlier: plate + colophon)
+ */
+
+:root {
+  --color-paper: oklch(96.2% 0.012 78);
+  --color-paper-2: oklch(93.4% 0.014 78);
+  --color-paper-3: oklch(90.2% 0.016 78);
+  --color-rule: oklch(82% 0.012 78);
+  --color-neutral: oklch(52% 0.014 70);
+  --color-muted: oklch(38% 0.016 60);
+  --color-ink: oklch(20% 0.018 50);
+  --color-accent: oklch(42% 0.12 40);
+  --color-focus: oklch(48% 0.14 40);
+  --color-on-accent: oklch(97% 0.01 78);
+
+  --font-display: var(--font-newsreader), "Newsreader", ui-serif, Georgia, serif;
+  --font-body: var(--font-cardo), "Cardo", ui-serif, Georgia, serif;
+  --font-outlier: var(--font-plex), "IBM Plex Mono", ui-monospace, monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.333rem;
+  --text-2xl: 1.777rem;
+  --text-3xl: 2.369rem;
+  --text-4xl: 3.157rem;
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+
+  --page-gutter: clamp(1rem, 4vw, 2.5rem);
+  --nav-h: 3.25rem;
+  --measure: 62ch;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+
+  --rule: 1px solid var(--color-rule);
+  --radius-none: 0;
+
+  --z-base: 1;
+  --z-raised: 10;
+  --z-sticky: 200;
+  --z-modal: 400;
+}
