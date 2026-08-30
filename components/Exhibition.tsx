@@ -4,7 +4,6 @@ import { useState } from "react";
 import { Colophon } from "@/components/Colophon";
 import { Explainer } from "@/components/Explainer";
 import { HotspotNote } from "@/components/HotspotNote";
-import { Nav } from "@/components/Nav";
 import { ObjectPlate } from "@/components/ObjectPlate";
 import { PaintingViewer } from "@/components/PaintingViewer";
 import type { Work } from "@/lib/schema";
@@ -20,7 +19,6 @@ export function Exhibition({ work }: ExhibitionProps) {
 
   return (
     <>
-      <Nav work={work} />
       <main>
         <section className="photo-fold">
           <PaintingViewer

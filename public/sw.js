@@ -3,10 +3,8 @@ const SCOPE = self.registration.scope;
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches
-      .open("connoisseur-v2")
-      .then((cache) =>
-        cache.addAll([SCOPE, new URL("works/the-milkmaid.jpg", SCOPE).href]),
-      )
+      .open("connoisseur-v3")
+      .then((cache) => cache.addAll([SCOPE]))
       .then(() => self.skipWaiting()),
   );
 });
@@ -18,7 +16,7 @@ self.addEventListener("activate", (event) => {
       .then((keys) =>
         Promise.all(
           keys
-            .filter((key) => key !== "connoisseur-v2")
+            .filter((key) => key !== "connoisseur-v3")
             .map((key) => caches.delete(key)),
         ),
       )
@@ -41,7 +39,7 @@ self.addEventListener("fetch", (event) => {
       fetch(request)
         .then((response) => {
           const copy = response.clone();
-          caches.open("connoisseur-v2").then((cache) => cache.put(request, copy));
+          caches.open("connoisseur-v3").then((cache) => cache.put(request, copy));
           return response;
         })
         .catch(() =>
@@ -61,7 +59,7 @@ self.addEventListener("fetch", (event) => {
           if (response.ok) {
             const copy = response.clone();
             caches
-              .open("connoisseur-v2")
+              .open("connoisseur-v3")
               .then((cache) => cache.put(request, copy));
           }
           return response;

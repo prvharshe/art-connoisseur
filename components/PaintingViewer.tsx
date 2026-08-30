@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useId, useRef, useState, type CSSProperties } from "react";
 import type OpenSeadragon from "openseadragon";
+import { assetPath } from "@/lib/asset";
 import type { Hotspot, Work } from "@/lib/schema";
 
 type PaintingViewerProps = {
@@ -88,7 +89,7 @@ export function PaintingViewer({
         viewer?.open({
           tileSource: {
             type: "image",
-            url: work.image.poster,
+            url: assetPath(work.image.poster),
           },
         });
       });
@@ -196,7 +197,11 @@ export function PaintingViewer({
         className={open ? "viewer-host" : "viewer-host is-waiting"}
         role="application"
         aria-label={`${work.title}, zoomable painting. Number keys open plates.`}
-        style={{ "--poster": `url(${work.image.poster})` } as CSSProperties}
+        style={
+          {
+            "--poster": `url(${assetPath(work.image.poster)})`,
+          } as CSSProperties
+        }
       />
       <p className="viewer-caption">
         <span>{work.caption}</span>

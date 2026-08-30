@@ -5,5 +5,12 @@
     "theme": "Newsprint",
     "enrichment": "none",
     "brief": "The Milkmaid exhibition, look-first austere catalog"
+  },
+  {
+    "date": "2026-08-27",
+    "macrostructure": "Index-First",
+    "theme": "Newsprint",
+    "enrichment": "none",
+    "brief": "Catalog index of works, hairline rows, no hero image"
   }
 ]

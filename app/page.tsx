@@ -1,19 +1,13 @@
-import type { Metadata } from "next";
-import { Exhibition } from "@/components/Exhibition";
-import { getFirstWork } from "@/lib/works";
+import { Catalog } from "@/components/Catalog";
+import { getWorks } from "@/lib/works";
 
-const work = getFirstWork();
+const works = getWorks();
 
-export const metadata: Metadata = {
-  title: work.title,
-  description: `${work.maker.name}, ${work.title}. ${work.location}, ${work.accession}.`,
-  openGraph: {
-    title: `${work.title} · Connoisseur`,
-    description: work.image.alt,
-    images: [work.image.poster],
-  },
+export const metadata = {
+  title: "Works",
+  description: "Look first. One room at a time.",
 };
 
 export default function Home() {
-  return <Exhibition work={work} />;
+  return <Catalog works={works} />;
 }
