@@ -125,7 +125,7 @@ const draft = {
     },
   ],
   explainer: [
-    "This is the one room that is not Vermeer. The scale changes, and the paint changes. Vermeer subtracts until a pour or a letter can hold a small canvas. Rembrandt builds a crust you could catch a sleeve on.",
+    "This is not a Vermeer room. The scale changes, and the paint changes. Vermeer subtracts until a pour or a letter can hold a small canvas. Rembrandt builds a crust you could catch a sleeve on.",
     "The museum wants you to know two things at once: the subject they now print (Isaac and Rebecca, the Abimelech story) and the method (thick paint, scratched with the brush’s butt). Look at the method first. The story is a label. The sleeve is on the surface.",
     "Jewish Bride is a sticky wrong name. A collector in the nineteenth century saw a father and a wedding gift. The museum’s present title leads with a biblical couple and still, in Dutch, allows other Old Testament pairs. Faces like portraits, clothes like theatre: that gap is honest. Closing it would be a kind of lying.",
     "Van der Hoop again: the picture is the city’s, on loan since the bequest. Same door as the woman in blue, a different century of paint.",

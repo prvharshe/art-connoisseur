@@ -1,3 +1,4 @@
+import { flowersInAGlassVase } from "@/content/works/still-life-with-flowers-in-a-glass-vase";
 import { jewishBride } from "@/content/works/the-jewish-bride";
 import { littleStreet } from "@/content/works/the-little-street";
 import { milkmaid } from "@/content/works/the-milkmaid";
@@ -9,6 +10,7 @@ const works: Work[] = [
   womanReadingALetter,
   littleStreet,
   jewishBride,
+  flowersInAGlassVase,
 ];
 
 export function getWorks(): Work[] {
