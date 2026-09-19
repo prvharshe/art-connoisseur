@@ -2,6 +2,7 @@ import { flowersInAGlassVase } from "@/content/works/still-life-with-flowers-in-
 import { jewishBride } from "@/content/works/the-jewish-bride";
 import { littleStreet } from "@/content/works/the-little-street";
 import { milkmaid } from "@/content/works/the-milkmaid";
+import { threatenedSwan } from "@/content/works/the-threatened-swan";
 import { winterLandscapeWithIceSkaters } from "@/content/works/winter-landscape-with-ice-skaters";
 import { womanReadingALetter } from "@/content/works/woman-reading-a-letter";
 import type { Work } from "@/lib/schema";
@@ -13,6 +14,7 @@ const works: Work[] = [
   jewishBride,
   flowersInAGlassVase,
   winterLandscapeWithIceSkaters,
+  threatenedSwan,
 ];
 
 export function getWorks(): Work[] {
