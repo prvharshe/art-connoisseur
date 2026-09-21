@@ -1,4 +1,5 @@
 import { flowersInAGlassVase } from "@/content/works/still-life-with-flowers-in-a-glass-vase";
+import { portraitOfAMarriedCouple } from "@/content/works/portrait-of-a-married-couple";
 import { jewishBride } from "@/content/works/the-jewish-bride";
 import { littleStreet } from "@/content/works/the-little-street";
 import { milkmaid } from "@/content/works/the-milkmaid";
@@ -17,6 +18,7 @@ const works: Work[] = [
   winterLandscapeWithIceSkaters,
   threatenedSwan,
   windmillAtWijkBijDuurstede,
+  portraitOfAMarriedCouple,
 ];
 
 export function getWorks(): Work[] {
