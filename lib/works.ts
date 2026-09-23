@@ -4,6 +4,7 @@ import { jewishBride } from "@/content/works/the-jewish-bride";
 import { littleStreet } from "@/content/works/the-little-street";
 import { milkmaid } from "@/content/works/the-milkmaid";
 import { merryFamily } from "@/content/works/the-merry-family";
+import { serenade } from "@/content/works/the-serenade";
 import { threatenedSwan } from "@/content/works/the-threatened-swan";
 import { windmillAtWijkBijDuurstede } from "@/content/works/the-windmill-at-wijk-bij-duurstede";
 import { winterLandscapeWithIceSkaters } from "@/content/works/winter-landscape-with-ice-skaters";
@@ -21,6 +22,7 @@ const works: Work[] = [
   windmillAtWijkBijDuurstede,
   portraitOfAMarriedCouple,
   merryFamily,
+  serenade,
 ];
 
 export function getWorks(): Work[] {
