@@ -1,3 +1,4 @@
+import { odulphuskerk } from "@/content/works/interior-of-the-sint-odulphuskerk-in-assendelft";
 import { flowersInAGlassVase } from "@/content/works/still-life-with-flowers-in-a-glass-vase";
 import { giltCup } from "@/content/works/still-life-with-a-gilt-cup";
 import { portraitOfAMarriedCouple } from "@/content/works/portrait-of-a-married-couple";
@@ -27,6 +28,7 @@ const works: Work[] = [
   serenade,
   giltCup,
   sickChild,
+  odulphuskerk,
 ];
 
 export function getWorks(): Work[] {
