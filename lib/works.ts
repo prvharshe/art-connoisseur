@@ -1,3 +1,4 @@
+import { gallantConversation } from "@/content/works/gallant-conversation";
 import { odulphuskerk } from "@/content/works/interior-of-the-sint-odulphuskerk-in-assendelft";
 import { flowersInAGlassVase } from "@/content/works/still-life-with-flowers-in-a-glass-vase";
 import { giltCup } from "@/content/works/still-life-with-a-gilt-cup";
@@ -29,6 +30,7 @@ const works: Work[] = [
   giltCup,
   sickChild,
   odulphuskerk,
+  gallantConversation,
 ];
 
 export function getWorks(): Work[] {
